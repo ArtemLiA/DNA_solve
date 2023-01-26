@@ -10,6 +10,10 @@ int main() {
     std::string s2;
     std::cin >> s1;
     std::cin >> s2;
+    if (s1.length() == 0 || s2.length() == 0){
+        std::cout << 0;
+        return 0;
+    }
     std::map<char, unsigned long int> codes;
     //"Коды" для символов
     codes.insert({'A', 1050 * 1050 * 1050});
